@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="丁梦雨 UI/UX 设计作品集，包含蘑菇宠医小程序与悦动伙伴 App 设计。"
+    />
+    <title>丁梦雨 | UI/UX 设计作品集</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="loader" aria-hidden="true">
+      <span>PORTFOLIO 2025</span>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#cover" aria-label="返回作品集封面">DMY</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        导航
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="主导航">
+        <a href="#cover">封面</a>
+        <a href="#about">关于我</a>
+        <a href="#works">作品预览</a>
+        <a href="#projects">项目目录</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="cover" class="panel panel-cover" data-label="封面">
+        <img
+          class="panel-art cover-art"
+          src="assets/cover.jpg"
+          alt="丁梦雨 2025 UI/UX 设计作品集封面"
+        />
+        <div class="cover-actions">
+          <p>UI / UX DESIGNER</p>
+          <a class="primary-action" href="#about">开始浏览</a>
+        </div>
+        <a class="scroll-cue" href="#about">向下浏览</a>
+      </section>
+
+      <section id="about" class="panel panel-about" data-label="关于我">
+        <img
+          class="panel-art"
+          src="assets/profile.jpg"
+          alt="丁梦雨的个人简介、实习经历、职业技能与联系方式"
+        />
+        <div class="about-actions">
+          <button class="secondary-action" type="button" data-contact>查看联系方式</button>
+          <a class="text-action" href="#projects">浏览项目</a>
+        </div>
+      </section>
+
+      <section id="works" class="panel panel-works" data-label="作品预览">
+        <img
+          class="panel-art works-art"
+          src="assets/works-preview.jpg"
+          alt="蘑菇宠医与悦动伙伴项目界面预览"
+        />
+        <div class="work-hotspots" aria-label="作品快捷预览">
+          <button type="button" data-project="mushroom">
+            <span>01</span>
+            蘑菇宠医
+          </button>
+          <button type="button" data-project="fitness">
+            <span>02</span>
+            悦动伙伴
+          </button>
+        </div>
+      </section>
+
+      <section id="projects" class="panel panel-projects" data-label="项目目录">
+        <img
+          class="panel-art index-art"
+          src="assets/project-index.jpg"
+          alt="UI/UX 项目目录背景"
+        />
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-number">01</div>
+            <h2>蘑菇宠医</h2>
+            <p>小程序改版，覆盖用户洞察、体验优化与 IP 设计。</p>
+            <button type="button" data-project="mushroom">查看项目</button>
+          </article>
+          <article class="project-card">
+            <div class="project-number">02</div>
+            <h2>悦动伙伴</h2>
+            <p>运动健康 App，从 0 到 1 完成品牌、界面与激励体验。</p>
+            <button type="button" data-project="fitness">查看项目</button>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <nav class="section-dots" aria-label="章节快速导航"></nav>
+
+    <dialog class="project-dialog">
+      <div class="dialog-shell">
+        <div class="dialog-toolbar">
+          <div>
+            <p class="dialog-index"></p>
+            <h2 class="dialog-title"></h2>
+          </div>
+          <button class="dialog-close" type="button" aria-label="关闭项目预览">关闭</button>
+        </div>
+        <p class="dialog-description"></p>
+        <div class="dialog-canvas">
+          <img class="dialog-image" src="" alt="" />
+        </div>
+        <div class="dialog-footer">
+          <span>滚动查看完整画面</span>
+          <div class="zoom-controls" aria-label="图片缩放">
+            <button type="button" data-zoom="out">缩小</button>
+            <output>100%</output>
+            <button type="button" data-zoom="in">放大</button>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="contact-dialog">
+      <div class="contact-card">
+        <p>联系丁梦雨</p>
+        <h2>一起聊聊设计机会</h2>
+        <dl>
+          <div>
+            <dt>电话</dt>
+            <dd><a href="tel:19955234559">199 5523 4559</a></dd>
+          </div>
+          <div>
+            <dt>微信</dt>
+            <dd>ybx056437</dd>
+          </div>
+        </dl>
+        <button type="button" data-contact-close>关闭</button>
+      </div>
+    </dialog>
+  </body>
+</html>

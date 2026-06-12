@@ -1,2 +1,21 @@
-# -Portfolio
-Personal  portfolio
+# 丁梦雨 UI/UX 作品集
+
+基于原始 PDF 制作的可交互网页版本。
+
+## 预览
+
+直接双击 `index.html`，或在当前目录启动任意静态服务器：
+
+```powershell
+python -m http.server 8000
+```
+
+然后访问 `http://localhost:8000`。
+
+## 交互
+
+- 顶部导航与右侧章节定位
+- 项目卡片弹窗预览
+- 项目图片缩放与滚动查看
+- 联系方式弹窗
+- 键盘操作、移动端布局与减少动态效果支持
